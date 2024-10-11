@@ -1,1 +1,411 @@
 @charset "utf-8";
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fff;
+  padding: 15px 0;
+}
+
+.header-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.header-menu li {
+  margin-left: 15px;
+}
+
+.header-menu li i {
+  color: #777;
+}
+
+.contact-btn {
+  color: #fff;
+  background-color: #6ba7eb;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  color: #333;
+  background-color: #6ba7eb;
+  transition: color 0.3s;
+}
+
+.header-menu li i:hover {
+  color: #777;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.keyvisual {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+}
+
+.main-title h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 30px;
+}
+
+#img1 {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/keyvisual/keyvisual.jpg);
+  padding: 400px 0;
+}
+
+.news {
+  background-color: #e3f2fd;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
+
+.news-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.news-icon {
+  width: 40%;
+  height: 200px;
+  background-image: url(../images/news/news.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-text {
+  width: 60%;
+}
+
+.news-text p {
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-bottom: 35px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.news-text h2 {
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+  margin-top: 35px;
+}
+
+.skills {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.skills-text {
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-bottom: 35px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.skills-icon {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 100px;
+  justify-content: center;
+}
+
+.skills-icon li {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  opacity: 0.7;
+}
+
+.skills-icon li:hover {
+  opacity: 1;
+}
+
+.skills-1 {
+  background-image: url(../images/icons/photo.png);
+}
+
+.skills-2 {
+  background-image: url(../images/icons/flower.png);
+}
+
+.skills-3 {
+  background-image: url(../images/icons/data.png);
+}
+
+.skills-4 {
+  background-image: url(../images/icons/location.png);
+}
+
+.skills-5 {
+  background-image: url(../images/icons/calender.png);
+}
+
+.skills-6 {
+  background-image: url(../images/icons/security.png);
+}
+
+.plan {
+  background-color: #d0dfea;
+  padding: 50px;
+}
+
+.plan-content {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.plan-table {
+  margin: 0 auto;
+  width: auto;
+  border-collapse: collapse;
+}
+
+.plan-table th,
+.plan-table td {
+  font-size: 16px;
+  line-height: 26px;
+  border-left: 2px solid #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.plan-table th {
+  font-weight: bold;
+  background-color: #6ba7eb;
+}
+
+.plan-table td:first-child {
+  font-weight: bold;
+}
+
+.plan-table th:first-child,
+.plan-table td:first-child {
+  border-left: none;
+}
+
+.plan-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.plan-table tr:nth-child(odd) {
+  background-color: #e0efff;
+}
+
+.sns {
+  background-color: #e3f2fd;
+  display: flex;
+  justify-content: center;
+  padding: 200px 0;
+}
+
+.sns-icon {
+  display: flex;
+}
+
+.sns-icon a {
+  width: 185px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  color: #8c8c8c;
+  font-size: 40px;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+.sns-icon a:hover {
+  color: #fff;
+}
+
+.fab,
+.fas {
+  transition: 0.5s;
+}
+
+.fab:hover,
+.fas:hover {
+  color: #fff;
+}
+
+.footer-text {
+  background-color: #cfd8dc;
+}
+
+.footer-text p {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-align: right;
+  padding: 25px;
+}
+
+/* sp向け */
+@media (max-width: 767px) {
+  .inner {
+    max-width: 97%;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-menu div {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
+
+  .main-title {
+    font-size: 40px;
+  }
+
+  .main-title h1 {
+    font-size: 30px;
+  }
+
+  #img1 {
+    padding: 200px 0;
+    height: 120px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/keyvisual/keyvisual.jpg);
+  }
+
+  .news-content {
+    display: block;
+    text-align: center;
+  }
+
+  .skills-text {
+    font-size: 20px;
+  }
+
+  .plan {
+    padding: 50px 30px;
+  }
+
+  .plan-content {
+    font-size: 30px;
+  }
+
+  .plan-table {
+    height: 250px;
+  }
+
+  .plan-table th {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0px;
+  }
+  .plan-table td {
+    font-size: 12px;
+    padding: 0px;
+  }
+
+  .sns {
+    padding: 50px 0px;
+  }
+  .sns-icon {
+    padding: 50px 0px;
+    flex-direction: column;
+  }
+  .sns-icon a {
+    max-width: 100%;
+    padding: 50px 15px;
+  }
+}
+
+/* タブレット向け */
+@media (max-width: 1199px) {
+  .inner {
+    max-width: 97%;
+  }
+
+  #img1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/keyvisual/keyvisual.jpg);
+    padding: 250px 0;
+  }
+
+  .news {
+    padding: 50px 0px;
+  }
+
+  .news-text {
+    width: 100%;
+  }
+
+  .news-content {
+    display: block;
+    text-align: center;
+  }
+
+  .news-icon {
+    width: 100%;
+  }
+
+  .skills-icon {
+    display: flex;
+    flex-direction: column; /* 子要素を��方向に配置する */
+    align-items: center; /* 子要素を��方向の中��に配置する */
+    gap: 0px;
+  }
+
+  .skills-icon li:nth-child(4) {
+    margin-top: 80px;
+  }
+
+  .skills-icon li:nth-child(7),
+  .skills-icon li:nth-child(11) {
+    margin-top: 80px;
+  }
+
+  .sns {
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sns-icon {
+    display: flex;
+    justify-content: center;
+  }
+}
